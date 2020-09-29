@@ -22,6 +22,12 @@ export default function App() {
     { sponsorName: "Sponsor4", completed: true },
     { sponsorName: "Eigen", completed: false }
   ]);
+  const [charity, setcharity] = useState([
+    { sponsorName: "Financing", sponsorDesc: "This is description about Financing", sponsorImg:"./img/abstract-logo2.jpg"},
+    { sponsorName: "Financing", sponsorDesc: "This is description about Financing", sponsorImg:"./img/abstract-logo2.jpg" },
+    { sponsorName: "Financing", sponsorDesc: "This is description about Financing", sponsorImg:"./img/abstract-logo2.jpg"},
+    { sponsorName: "Financing", sponsorDesc: "This is description about Financing", sponsorImg:" ./img/abstract-logo2.jpg"}
+  ]);
   return (
     <Router>
       <div>

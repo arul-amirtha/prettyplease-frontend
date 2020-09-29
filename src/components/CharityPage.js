@@ -3,7 +3,7 @@ import PPNavbar from './PPNavbar';
 
 
 
-function CharityPage() {
+function CharityPage({charity}) {
     const [navitems, setnavitems] = useState([
         { itemName: "Review and Accept", itemLink: "", itemAddr: "", activePage: true },
         { itemName: "Fund Request", itemLink: "/FundRequest", itemAddr: "FundRequest/", activePage: false }
@@ -18,7 +18,7 @@ function CharityPage() {
             <h1>Charity Page</h1>
             <div class="container">
 
-                <p class="text-justify mt-4">You have received 4 offers for the request you made on 21/09/2020</p>
+                <p class="text-justify mt-4">You have received {charity.numOffers} offers for the request you made on 21/09/2020</p>
 
 
                 <div class="card-deck">
@@ -114,5 +114,7 @@ function CharityPage() {
 
     );
 }
+function cardSponsor({img,}){
 
+}
 export default CharityPage;
