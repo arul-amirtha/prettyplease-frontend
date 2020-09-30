@@ -14,7 +14,7 @@ function Main({SponsorData}) {
   
   return (
     <div className="Main">
-      <PPNavbar NavItems={navitems}  showProfile={showProfile}/>
+      {/* <PPNavbar NavItems={navitems}  showProfile={showProfile}/> */}
 
       <h2>Main</h2>
       <Sponsorlist SponsorData={SponsorData}/>

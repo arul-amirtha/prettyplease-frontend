@@ -69,7 +69,7 @@ function PPNavbar({ NavItems, showProfile }) {
         <Switch>
           {/* {NavItems.map(item => <Route path={item.itemLink} component={item.itemAddr} />)} */}
 
-          {NavItems.map(item =><Route path={item.itemLink} component={item.itemAddr}></Route>)}
+          {NavItems.forEach(item =><Route path={item.itemLink} component={item.itemAddr}></Route>)}
         </Switch>
 
       </div>
