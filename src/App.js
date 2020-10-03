@@ -7,13 +7,10 @@ import FundRequest from './components/FundRequest';
 import PPNavbar from './components/PPNavbar';
 import DisplayLogo from './components/DisplayLogo';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Switch, Link} from 'react-router-dom';
+import { Route } from 'react-router-dom'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+
 
 export default function App() {
   const [sponsor, setSponsor] = useState([
