@@ -22,10 +22,10 @@ export default function App() {
     { sponsorName: "Eigen", completed: false }
   ]);
   const [charity, setcharity] = useState([
-    { sponsorName: "Financing", sponsorDesc: "This is description about Financing", sponsorImg: './img/abstract-logo.jpg' },
-    { sponsorName: "Financing", sponsorDesc: "This is description about Financing", sponsorImg: './img/abstract-logo2.jpg' },
-    { sponsorName: "Financing", sponsorDesc: "This is description about Financing", sponsorImg: './img/abstract-logo3.jpg' },
-    { sponsorName: "Financing", sponsorDesc: "This is description about Financing", sponsorImg: './img/abstract-logo4.jpg' }
+    { sponsorName: "Financing", sponsorDesc: "This is description about Financing sponsor", sponsorImg:require('./components/img/abstract-logo.jpg') },
+    { sponsorName: "Telecom", sponsorDesc: "This is description about Telecom Sponsor", sponsorImg:require('./components/img/abstract-logo2.jpg')},
+    { sponsorName: "Sports Brand", sponsorDesc: "This is description about Sports goods Sponsor", sponsorImg: require('./components/img/abstract-logo3.jpg')},
+    { sponsorName: "Manufacturing Brand", sponsorDesc: "This is description about Manufacturing sponsor and their values", sponsorImg: require('./components/img/abstract-logo4.jpg') }
   ]);
 
   const [showProfile, setshowProfile] = useState(false);
@@ -34,7 +34,7 @@ export default function App() {
       <Router>
         <div className="PPNavbar">
           <nav className="navbar navbar-expand-lg navbar-dark navpurple">
-          <Link to="/" className='navbar-brand'>Pretty Please</Link>
+          <Link to="/" className='navbar-brand'>Pretty <span class="icon" role="img" aria-label="Please">🙏</span></Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
               aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
